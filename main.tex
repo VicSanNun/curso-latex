@@ -1,0 +1,63 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[left=3cm, top=3cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{multicol}
+
+\begin{document}
+
+    \title{\textbf{\huge{Meu primeiro artigo em Latex}}}
+    \author{Victor S. Nunes \footnote{DFI-UFS} \\ Fulano de Tal \footnote{UNIT}}
+    \date{Set/2020}
+    \maketitle
+    \abstract{Mauris in libero vel diam gravida blandit non sed dolor. Praesent consectetur felis vulputate, facilisis est in, dapibus orci. Aenean tempus consequat maximus. Integer quis purus finibus, condimentum sapien eu, congue leo. Phasellus imperdiet ante at enim ultrices vestibulum. Donec non erat scelerisque, viverra nisl et, ullamcorper velit. Fusce scelerisque odio eget magna bibendum, vitae pretium augue iaculis. Mauris dictum maximus orci nec lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos}
+    
+    \begin{multicols}{2}
+    \section{Introdução}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in magna ullamcorper leo lacinia aliquet in ornare velit. Aenean volutpat, sapien eu congue condimentum, arcu ipsum placerat lacus, ut scelerisque augue ipsum sit amet est. Maecenas non ex sit amet sapien volutpat lacinia vel et nibh. Phasellus rutrum sagittis nunc, a interdum sem molestie ac. Vivamus vulputate elementum nisl ut commodo. Mauris id tellus vel ante lacinia lobortis ac ac quam. Aliquam erat volutpat. In eleifend eget sapien non semper. Cras vel bibendum purus, sit amet bibendum metus. Ut sit amet ultricies quam. Cras dignissim interdum auctor. Sed hendrerit viverra nulla id scelerisque. Nam ullamcorper ornare lorem, quis dapibus felis. \cite{Moyses1}
+    
+    Cras vel bibendum purus, sit amet bibendum metus. Ut sit amet ultricies quam. Cras dignissim interdum auctor. Sed hendrerit viverra nulla id scelerisque. Nam ullamcorper ornare lorem, quis dapibus felis. 
+    
+    \section{Fundamentos Matemáticos}
+    \subsection{Derivadas}
+    Maecenas lobortis massa eu tincidunt volutpat. Integer magna sem, venenatis eget gravida vel, rhoncus in sapien. Maecenas finibus varius orci, id luctus eros scelerisque vel. Duis nec ex mi. Mauris sed consequat ipsum, in fringilla lacus. Vivamus interdum id mi eleifend faucibus. Suspendisse imperdiet lectus at dolor aliquam semper. Nullam ut volutpat odio. Fusce id lectus ipsum. Nullam vitae sapien neque.
+    $$\frac{df}{dt} = f'(t) = \lim_{\Delta t \to 0} \frac{f(t+\Delta t) - f(t)}{\Delta t}$$
+    
+    \subsection{Integrais}
+    Lorem ipsum dolor sit amet, consecteturadipiscing elit. Sed blandit odio in nibh inter-dum, at pretium velit fermentum.  Phasellusfaucibus dignissim vestibulum.  Proin facilisismattis placerat.  Praesent luctus arcu ac mo-lestie interdum.  \textbf{Exemplo em Negrito} \textit{Exemplo em Itálico}In mattis varius eros, nec ul-trices est lobortis in. \underline{Exemplo Sublinhado} Vestibulum vestibulumdictum  leo  at  accumsan.   Maecenas suscipitsem ligula, nec suscipit nibh iaculis ut.
+    $$\int_{a}^{b} f(t) dt = \lim_{\Delta t \to 0} \sum_{i=0}^{n} f(t_{i}^{*}) \Delta t$$
+    
+    \section{Resultados}
+    \subsection{Questões Abordadas}
+    
+    \begin{itemize}
+        \item Etiam auctor ligula vel lacus tempus
+        \item Vivamus fringilla nulla a elit venenatis
+        \item Sed vitae luctus dui
+    \end{itemize}
+    
+    \subsection{Resultados Obtidos}
+    \begin{enumerate}
+        \item Lei da Inércia
+        \item $F=ma$
+        \item sed accumsan diam
+        \begin{enumerate}
+            \item Outra Lista
+        \end{enumerate}
+    \end{enumerate}
+ 
+ \section{Postulados}
+ \begin{description}
+    \item[Primeiro Postulado] enean eleifend diamat efficitur varius
+ \end{description}
+ 
+ \section{Conclusão}
+  Nunc venenatis, libero non egestas aliquet, massa lectus suscipit ex, id tempor mauris odio eu nibh. Donec elit justo, aliquet in mi nec, lacinia vulputate lacus. Ut tortor lectus, aliquet id ex posuere, commodo viverra purus. Ut iaculis nisl ante, id tristique nisl interdum eu. Quisque pharetra lacus eget erat scelerisque, eget bibendum est interdum. Morbi rhoncus augue vel arcu vestibulum vehicula. Aenean egestas nisl non ipsum blandit, quis hendrerit magna porta. Vivamus orci orci, semper eget odio quis, mattis tempor sem. Morbi eu augue ligula. Nulla vehicula erat sem, vel malesuada lacus pretium sit amet. Phasellus eu convallis tellus. In at iaculis ante, in volutpat libero. Suspendisse laoreet sit amet sem a egestas. Duis rutrum neque ut efficitur pharetra.
+  
+    \nocite{johntaylor2005}
+    \bibliographystyle{apalike}
+    \bibliography{bibliografia}
+    \end{multicols}
+ 
+\end{document}
