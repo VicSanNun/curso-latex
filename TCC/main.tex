@@ -1,0 +1,102 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+
+
+
+\newtheorem{defi}[subsection]{Definição}
+
+\begin{document}
+    \begin{center}
+        \Large UNIVERSIDADE FEDERAL DE SERGIPE\\CENTRO DE CIÊNCIAS EXATAS E DA TERRA\\DEPARTAMENTO DE FÍSICA
+        \vspace{50mm}
+        
+        \normalsize
+        \textbf{Victor S. Nunes}
+        \vspace{60mm}
+        
+        \Large \textbf{Modelo de TCC escrito em \LaTeX}
+        \vspace{100mm}
+        
+        \normalsize
+        São Cristóvão, 01 de Janeiro de 2020
+        \thispagestyle{empty}
+    \end{center}
+    \newpage
+    \begin{center}
+        \Large Victor S. Nunes
+        \vspace{50mm}
+        
+        MODELO DE TCC ESCRITO EM \LaTeX
+    \end{center}
+    \vspace{50mm}
+    
+    \begin{flushright}
+        Trabalho de Conclusão de Curso submetido à\\Universidade Federal de Sergipe como requisito\\para receber o grau de bacharel em Astrofísica
+    \end{flushright}
+    \vspace{100mm}
+    
+    \begin{center}
+        São Cristóvão, 01 de Janeiro de 2020
+    \end{center}
+    \thispagestyle{empty}
+    
+    \newpage
+    
+    \abstract{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin turpis enim, ultricies sit amet ante non, consectetur elementum nisi. Praesent dictum condimentum scelerisque. Cras nibh massa, facilisis vel tristique at, facilisis a tellus. Aliquam vitae gravida nibh. Vestibulum ornare pretium mauris et congue. Maecenas vehicula consequat mauris accumsan suscipit. Maecenas vulputate, leo sed gravida vestibulum, erat nulla mattis massa, et volutpat quam libero id dui. Vivamus eleifend dui neque, quis convallis tellus condimentum nec. Quisque mi nisi, cursus vel nisi eget, laoreet finibus elit. }
+    \thispagestyle{empty}
+    
+    \newpage
+    \listoffigures
+    \pagenumbering{roman}    
+    \setcounter{page}{1}
+    
+    \newpage
+    \listoftables
+    
+    \newpage
+    \tableofcontents
+    \thispagestyle{empty}
+    
+    \newpage
+    
+    \pagenumbering{arabic}    
+    \setcounter{page}{1}
+    
+    \newpage
+    \section{Introdução}
+    \input{intro}
+    
+    \section{Objetivos}
+    \input{objetivos}
+    
+    \section{Metodologia}
+    \input{metodologia}
+    
+    \section{Leis de Maxwell}
+    \input{leisMaxwell}
+    
+    \section{Aplicações do Eletromagnetismo}
+    \input{aplicacoes}
+    
+    \section{Resultados}
+    \input{resultados}
+    
+    \nocite{thornton2004classical}
+    \nocite{johntaylor2005}
+    \nocite{eisberg1979fisica}
+    \nocite{griffiths2017introduction}
+    \nocite{ness1983understanding}
+    
+    \newpage
+    \addcontentsline{toc}{section}{Referências}
+    \bibliographystyle{abbrv}
+    \bibliography{refs}
+    
+\end{document}
